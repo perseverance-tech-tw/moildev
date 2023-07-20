@@ -155,4 +155,4 @@ cv2.imshow("show recenter", recenter)
 ```
 
 
-Ming-Chi Omni-directional, Surveillance, and Imaging laboratory (MOIL-Lab), Ming Chi University of Technology, Taiwan
+**© Perseverance Technology, Taiwan. All rights reserved.**
