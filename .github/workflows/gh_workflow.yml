@@ -3,7 +3,7 @@ name: create_pages_workflow
 # execute this workflow automatically when a push to main
 on:
   push:
-    branches: [ main ]
+    branches: [ latest ]
 
 jobs:
 
