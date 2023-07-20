@@ -1,0 +1,44 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, Haryanto
+# This file is distributed under the same license as the MyProject package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MyProject main\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-07-05 14:29+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ch\n"
+"Language-Team: ch <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.12.1\n"
+
+#: ../../index.rst:9
+msgid "Contents:"
+msgstr "篇目:"
+
+#: ../../index.rst:7
+msgid "Welcome to MyProject's documentation!"
+msgstr "歡迎使用 MyProject 的文檔!"
+
+#: ../../index.rst:18
+msgid "Indices and tables"
+msgstr "索引和表格"
+
+#: ../../index.rst:20
+msgid ":ref:`genindex`"
+msgstr ""
+
+#: ../../index.rst:21
+msgid ":ref:`modindex`"
+msgstr ""
+
+#: ../../index.rst:22
+msgid ":ref:`search`"
+msgstr ""
+

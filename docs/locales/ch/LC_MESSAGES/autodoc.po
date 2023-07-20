@@ -1,0 +1,48 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, Haryanto
+# This file is distributed under the same license as the MyProject package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: MyProject main\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-07-05 14:29+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: ch\n"
+"Language-Team: ch <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.12.1\n"
+
+#: ../../autodoc.rst:4
+msgid "My Module"
+msgstr "我的模塊"
+
+#: ../../autodoc.rst:5
+msgid "The example of the documentation using version and branch maintainer"
+msgstr "使用版本和分支維護者的文檔示例"
+
+#: my_module:1 of
+msgid "This is a very simple function in python script"
+msgstr "這是Python腳本中一個非常簡單的函數"
+
+#: my_module.print_func:1 of
+msgid "This is a simple function that prints a message"
+msgstr "這是一個打印消息的簡單函數"
+
+#: my_module.print_func:3 of
+msgid "Parameters:"
+msgstr "參數:"
+
+#: my_module.print_func:4 of
+msgid "msg (str): The string to print"
+msgstr "msg (str): 要打印的字符串"
+
+#: ../../autodoc.rst:13
+msgid "Another Heading"
+msgstr "另一個標題"
+

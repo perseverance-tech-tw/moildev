@@ -1,0 +1,520 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, Perseverance Technology
+# This file is distributed under the same license as the Moildev package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Moildev v1.x\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-07-14 10:54+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: id\n"
+"Language-Team: id <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.12.1\n"
+
+#: ../../api_reference.rst:4
+msgid "API Reference"
+msgstr ""
+
+#: ../../api_reference.rst:8
+msgid "Moildev Module"
+msgstr ""
+
+#: moildev.Moildev.Moildev:1 of
+msgid "Bases: :py:class:`object`"
+msgstr ""
+
+#: moildev.Moildev.Moildev:1 of
+msgid ""
+"Before the ensuing functions can function properly, the camera parameter "
+"must be configured at the start of the program. The camera parameter is "
+"the outcome of the MOIL laboratory's calibration camera."
+msgstr ""
+
+#: moildev.Moildev.Moildev moildev.Moildev.Moildev.anypoint_mode1
+#: moildev.Moildev.Moildev.anypoint_mode2
+#: moildev.Moildev.Moildev.get_alpha_beta
+#: moildev.Moildev.Moildev.get_alpha_from_rho
+#: moildev.Moildev.Moildev.get_rho_from_alpha
+#: moildev.Moildev.Moildev.maps_anypoint_mode1
+#: moildev.Moildev.Moildev.maps_anypoint_mode2
+#: moildev.Moildev.Moildev.maps_panorama_car
+#: moildev.Moildev.Moildev.maps_panorama_rt
+#: moildev.Moildev.Moildev.maps_panorama_tube
+#: moildev.Moildev.Moildev.maps_recenter moildev.Moildev.Moildev.panorama_car
+#: moildev.Moildev.Moildev.panorama_tube moildev.Moildev.Moildev.recenter of
+msgid "Parameters"
+msgstr ""
+
+#: moildev.Moildev.Moildev:5 of
+msgid "*.json file"
+msgstr ""
+
+#: moildev.Moildev.Moildev:6 of
+msgid ""
+"the name of the camera type used (use if yore pass the parameter using "
+"*.json file)"
+msgstr ""
+
+#: moildev.Moildev.Moildev:7 of
+msgid "the name of the camera used"
+msgstr ""
+
+#: moildev.Moildev.Moildev:8 of
+msgid "camera field of view (FOV)"
+msgstr ""
+
+#: moildev.Moildev.Moildev:9 of
+msgid "size of sensor width"
+msgstr ""
+
+#: moildev.Moildev.Moildev:10 of
+msgid "size of sensor height"
+msgstr ""
+
+#: moildev.Moildev.Moildev:11 of
+msgid "center image in x-axis"
+msgstr ""
+
+#: moildev.Moildev.Moildev:12 of
+msgid "center image in y-axis"
+msgstr ""
+
+#: moildev.Moildev.Moildev:13 of
+msgid "the value of the ratio image"
+msgstr ""
+
+#: moildev.Moildev.Moildev:14 of
+msgid "the size of width image"
+msgstr ""
+
+#: moildev.Moildev.Moildev:15 of
+msgid "the size of height image"
+msgstr ""
+
+#: moildev.Moildev.Moildev:16 of
+msgid "the value of calibration ratio"
+msgstr ""
+
+#: moildev.Moildev.Moildev:17 of
+msgid "intrinsic fisheye camera parameter get from calibration"
+msgstr ""
+
+#: moildev.Moildev.Moildev.version:1 of
+msgid "Showing the information of the version moildev library."
+msgstr ""
+
+#: moildev.Moildev.Moildev.anypoint_mode1
+#: moildev.Moildev.Moildev.anypoint_mode2 moildev.Moildev.Moildev.camera_fov
+#: moildev.Moildev.Moildev.camera_name moildev.Moildev.Moildev.get_alpha_beta
+#: moildev.Moildev.Moildev.get_alpha_from_rho
+#: moildev.Moildev.Moildev.get_rho_from_alpha moildev.Moildev.Moildev.icx
+#: moildev.Moildev.Moildev.icy moildev.Moildev.Moildev.image_height
+#: moildev.Moildev.Moildev.image_width
+#: moildev.Moildev.Moildev.maps_anypoint_mode1
+#: moildev.Moildev.Moildev.maps_anypoint_mode2
+#: moildev.Moildev.Moildev.maps_panorama_car
+#: moildev.Moildev.Moildev.maps_panorama_rt
+#: moildev.Moildev.Moildev.maps_panorama_tube
+#: moildev.Moildev.Moildev.maps_recenter moildev.Moildev.Moildev.panorama_car
+#: moildev.Moildev.Moildev.panorama_tube moildev.Moildev.Moildev.param_0
+#: moildev.Moildev.Moildev.param_1 moildev.Moildev.Moildev.param_2
+#: moildev.Moildev.Moildev.param_3 moildev.Moildev.Moildev.param_4
+#: moildev.Moildev.Moildev.param_5 moildev.Moildev.Moildev.recenter
+#: moildev.Moildev.Moildev.version of
+msgid "Returns"
+msgstr ""
+
+#: moildev.Moildev.Moildev.version:3 of
+msgid "Moildev version information"
+msgstr ""
+
+#: moildev.Moildev.Moildev.camera_name:1 of
+msgid "Get camera name used."
+msgstr ""
+
+#: moildev.Moildev.Moildev.camera_name:3 of
+msgid "Camera name (string)"
+msgstr ""
+
+#: moildev.Moildev.Moildev.camera_fov:1 of
+msgid "Get Field of View (FoV) from camera used."
+msgstr ""
+
+#: moildev.Moildev.Moildev.camera_fov:3 of
+msgid "FoV camera (int)"
+msgstr ""
+
+#: moildev.Moildev.Moildev.icx:1 of
+msgid "Get center image x-axis from camera used."
+msgstr ""
+
+#: moildev.Moildev.Moildev.icx:3 of
+msgid "Image center X (int)"
+msgstr ""
+
+#: moildev.Moildev.Moildev.icy:1 of
+msgid "Get center image y-axis from camera used."
+msgstr ""
+
+#: moildev.Moildev.Moildev.icy:3 of
+msgid "Image center Y(int)"
+msgstr ""
+
+#: moildev.Moildev.Moildev.image_width:1 of
+msgid "Get the width of the image used."
+msgstr ""
+
+#: moildev.Moildev.Moildev.image_width:3 of
+msgid "image width(int)"
+msgstr ""
+
+#: moildev.Moildev.Moildev.image_height:1 of
+msgid "Get the height of the image used."
+msgstr ""
+
+#: moildev.Moildev.Moildev.image_height:3 of
+msgid "image height(int)"
+msgstr ""
+
+#: moildev.Moildev.Moildev.param_0:1 of
+msgid "Get the value of calibration parameter_0 from camera used."
+msgstr ""
+
+#: moildev.Moildev.Moildev.param_0:3 of
+msgid "Parameter_0 (float)"
+msgstr ""
+
+#: moildev.Moildev.Moildev.param_1:1 of
+msgid "Get the value of calibration parameter_1 from camera used."
+msgstr ""
+
+#: moildev.Moildev.Moildev.param_1:3 of
+msgid "Parameter_1 (float)"
+msgstr ""
+
+#: moildev.Moildev.Moildev.param_2:1 of
+msgid "Get the value of calibration parameter_2 from camera used."
+msgstr ""
+
+#: moildev.Moildev.Moildev.param_2:3 of
+msgid "Parameter_2 (float)"
+msgstr ""
+
+#: moildev.Moildev.Moildev.param_3:1 of
+msgid "Get the value of calibration parameter_3 from camera used."
+msgstr ""
+
+#: moildev.Moildev.Moildev.param_3:3 of
+msgid "Parameter_3 (float)"
+msgstr ""
+
+#: moildev.Moildev.Moildev.param_4:1 of
+msgid "Get the value of calibration parameter_4 from camera used."
+msgstr ""
+
+#: moildev.Moildev.Moildev.param_4:3 of
+msgid "Parameter_4 (float)"
+msgstr ""
+
+#: moildev.Moildev.Moildev.param_5:1 of
+msgid "Get the value of calibration parameter_5 from camera used."
+msgstr ""
+
+#: moildev.Moildev.Moildev.param_5:3 of
+msgid "Parameter_5 (float)"
+msgstr ""
+
+#: moildev.Moildev.Moildev.maps_anypoint_mode1:1 of
+msgid ""
+"Generate a pair of X-Y Maps for the specified alpha, beta and zoom "
+"parameters, and then utilize the resulting X-Y Maps to remap the original"
+" fisheye image to the target angle image. This function has 2 mode to "
+"generate maps anypoint, mode 1 is for tube application and mode 2 usually"
+" for car application"
+msgstr ""
+
+#: moildev.Moildev.Moildev.maps_anypoint_mode1:6 of
+msgid "value of zenith distance(float)."
+msgstr ""
+
+#: moildev.Moildev.Moildev.maps_anypoint_mode1:7 of
+msgid "value of azimuthal distance based on cartography system(float)"
+msgstr ""
+
+#: moildev.Moildev.Moildev.maps_anypoint_mode1:8 of
+msgid "value of zoom(float)"
+msgstr ""
+
+#: moildev.Moildev.Moildev.maps_anypoint_mode1:10
+#: moildev.Moildev.Moildev.maps_anypoint_mode2:9
+#: moildev.Moildev.Moildev.maps_panorama_tube:9 of
+msgid "the mapping matrices X mapY: the mapping matrices Y"
+msgstr ""
+
+#: moildev.Moildev.Moildev.maps_anypoint_mode1
+#: moildev.Moildev.Moildev.maps_anypoint_mode2
+#: moildev.Moildev.Moildev.maps_panorama_tube of
+msgid "Return type"
+msgstr ""
+
+#: moildev.Moildev.Moildev.maps_anypoint_mode2:1 of
+msgid ""
+"Generate a pair of X-Y Maps for the specified pitch, yaw, and roll also "
+"zoom parameters, and then utilize the resulting X-Y Maps to remap the "
+"original fisheye image to the target image."
+msgstr ""
+
+#: moildev.Moildev.Moildev.maps_anypoint_mode2:4 of
+msgid "pitch rotation (from -110 to 110 degree)"
+msgstr ""
+
+#: moildev.Moildev.Moildev.maps_anypoint_mode2:5 of
+msgid "yaw rotation (from -110 to 110 degree)"
+msgstr ""
+
+#: moildev.Moildev.Moildev.maps_anypoint_mode2:6 of
+msgid "roll rotation (from -110 to 110 degree)"
+msgstr ""
+
+#: moildev.Moildev.Moildev.maps_anypoint_mode2:7 of
+msgid "zoom scale (1 - 20)"
+msgstr ""
+
+#: moildev.Moildev.Moildev.maps_panorama_tube:1 of
+msgid ""
+"To generate a pair of X-Y Maps for alpha within 0 ... alpha_max degree, "
+"the result X-Y Maps can be used later to generate a panorama image from "
+"the original fisheye image."
+msgstr ""
+
+#: moildev.Moildev.Moildev.maps_panorama_tube:4 of
+msgid "the minimum alpha degree given"
+msgstr ""
+
+#: moildev.Moildev.Moildev.maps_panorama_tube:5 of
+msgid ""
+"the maximum alpha degree given. The recommended value is half of camera "
+"FOV. For example, use 90 for a 180 degree fisheye images and use 110 for "
+"a 220 degree fisheye images."
+msgstr ""
+
+#: moildev.Moildev.Moildev.maps_panorama_car:9
+#: moildev.Moildev.Moildev.maps_panorama_tube:7
+#: moildev.Moildev.Moildev.panorama_car:13
+#: moildev.Moildev.Moildev.panorama_tube:6 of
+msgid "Flip horizontal axis (boolean True or False)"
+msgstr ""
+
+#: moildev.Moildev.Moildev.maps_panorama_car:1 of
+msgid ""
+"To generate a pair of X-Y Maps for alpha within 0 alpha_max degree, the "
+"result X-Y Maps can be used later to generate a panorama image from the "
+"original fisheye image. The panorama image centered at the 3D direction "
+"with alpha = iC_alpha_degree and beta = iC_beta_degree."
+msgstr ""
+
+#: moildev.Moildev.Moildev.maps_panorama_car:5
+#: moildev.Moildev.Moildev.maps_panorama_rt:5
+#: moildev.Moildev.Moildev.maps_recenter:3 moildev.Moildev.Moildev.recenter:4
+#: of
+msgid ""
+"max of alpha. The recommended value is half of camera FOV. For example, "
+"use 90 for a 180 degree fisheye images and use 110 for a 220 degree "
+"fisheye images."
+msgstr ""
+
+#: moildev.Moildev.Moildev.maps_panorama_car:7
+#: moildev.Moildev.Moildev.maps_panorama_rt:7 of
+msgid "alpha angle of panorama center."
+msgstr ""
+
+#: moildev.Moildev.Moildev.maps_panorama_car:8
+#: moildev.Moildev.Moildev.maps_panorama_rt:8 of
+msgid "beta angle of panorama center."
+msgstr ""
+
+#: moildev.Moildev.Moildev.maps_panorama_car:11
+#: moildev.Moildev.Moildev.maps_panorama_rt:10 of
+msgid "mapX mapY"
+msgstr ""
+
+#: moildev.Moildev.Moildev.maps_panorama_rt:1 of
+msgid ""
+"To generate a pair of X-Y Maps for alpha within 0..alpha_max degree, the "
+"result X-Y Maps can be used later to generate a panorama image from the "
+"original fisheye image. The panorama image centered at the 3D direction "
+"with alpha = iC_alpha_degree and beta = iC_beta_degree."
+msgstr ""
+
+#: moildev.Moildev.Moildev.maps_recenter:1 of
+msgid ""
+"Create maps for reverse image. this can work using input panorama "
+"rotation image"
+msgstr ""
+
+#: moildev.Moildev.Moildev.maps_recenter:5 of
+msgid "beta angle."
+msgstr ""
+
+#: moildev.Moildev.Moildev.maps_recenter:7 of
+msgid "maps_x_reverse, maps_y_reverse"
+msgstr ""
+
+#: moildev.Moildev.Moildev.anypoint_mode1:1
+#: moildev.Moildev.Moildev.anypoint_mode2:1 of
+msgid ""
+"Generate anypoint view image. for mode 1, the result rotation is "
+"betaOffset degree rotation around the Z-axis(roll) after alphaOffset "
+"degree rotation around the X-axis(pitch). for mode 2, The result rotation"
+" is thetaY degree rotation around the Y-axis(yaw) after thetaX degree "
+"rotation around the X-axis(pitch)."
+msgstr ""
+
+#: moildev.Moildev.Moildev.anypoint_mode1:5
+#: moildev.Moildev.Moildev.anypoint_mode2:5 of
+msgid "source image given"
+msgstr ""
+
+#: moildev.Moildev.Moildev.anypoint_mode1:6
+#: moildev.Moildev.Moildev.anypoint_mode2:6 of
+msgid "the alpha offset that corespondent to the pitch rotation"
+msgstr ""
+
+#: moildev.Moildev.Moildev.anypoint_mode1:7
+#: moildev.Moildev.Moildev.anypoint_mode2:7
+#: moildev.Moildev.Moildev.anypoint_mode2:8 of
+msgid "the beta offset that corespondent to the yaw rotation"
+msgstr ""
+
+#: moildev.Moildev.Moildev.anypoint_mode1:8
+#: moildev.Moildev.Moildev.anypoint_mode2:9 of
+msgid "decimal zoom factor, normally 1..12"
+msgstr ""
+
+#: moildev.Moildev.Moildev.anypoint_mode1:10
+#: moildev.Moildev.Moildev.anypoint_mode2:11 of
+msgid "anypoint image"
+msgstr ""
+
+#: moildev.Moildev.Moildev.panorama_tube:1 of
+msgid "The panorama image"
+msgstr ""
+
+#: moildev.Moildev.Moildev.panorama_tube:3 of
+msgid "image source given"
+msgstr ""
+
+#: moildev.Moildev.Moildev.panorama_tube:8 of
+msgid "Panorama view image"
+msgstr ""
+
+#: moildev.Moildev.Moildev.panorama_car:1 of
+msgid ""
+"The function that generate a moil dash panorama image from fisheye "
+"camera. the image can control by alpha to change the pitch direction and "
+"beta for yaw direction. in order to select the roi, we can control by the"
+" parameter such as left, right, top, and bottom."
+msgstr ""
+
+#: moildev.Moildev.Moildev.panorama_car:5 of
+msgid "input fisheye image"
+msgstr ""
+
+#: moildev.Moildev.Moildev.panorama_car:7 of
+msgid "change the pitch direction(0 ~ 180)"
+msgstr ""
+
+#: moildev.Moildev.Moildev.panorama_car:8 of
+msgid "change the yaw direction(-90 ~ 90)"
+msgstr ""
+
+#: moildev.Moildev.Moildev.panorama_car:9 of
+msgid "crop the left image by scale(0 ~ 1)"
+msgstr ""
+
+#: moildev.Moildev.Moildev.panorama_car:10 of
+msgid "crop the right image by scale(0 ~ 1)"
+msgstr ""
+
+#: moildev.Moildev.Moildev.panorama_car:11 of
+msgid "crop the top image by scale(0 ~ 1)"
+msgstr ""
+
+#: moildev.Moildev.Moildev.panorama_car:12 of
+msgid "crop the bottom image by scale(0 ~ 1)"
+msgstr ""
+
+#: moildev.Moildev.Moildev.panorama_car:15 of
+msgid "Panorama image"
+msgstr ""
+
+#: moildev.Moildev.Moildev.recenter:1 of
+msgid "Change the optical point of fisheye image."
+msgstr ""
+
+#: moildev.Moildev.Moildev.recenter:3 of
+msgid "input image"
+msgstr ""
+
+#: moildev.Moildev.Moildev.recenter:6 of
+msgid "alpha angle of panorama center"
+msgstr ""
+
+#: moildev.Moildev.Moildev.recenter:7 of
+msgid "beta angle of panorama center"
+msgstr ""
+
+#: moildev.Moildev.Moildev.recenter:9 of
+msgid "reverse image"
+msgstr ""
+
+#: moildev.Moildev.Moildev.get_alpha_from_rho:1 of
+msgid "Get the alpha from rho image."
+msgstr ""
+
+#: moildev.Moildev.Moildev.get_alpha_from_rho:3 of
+msgid "the value of rho given"
+msgstr ""
+
+#: moildev.Moildev.Moildev.get_alpha_from_rho:5 of
+msgid "alpha"
+msgstr ""
+
+#: moildev.Moildev.Moildev.get_rho_from_alpha:1 of
+msgid "Get rho image from alpha given."
+msgstr ""
+
+#: moildev.Moildev.Moildev.get_rho_from_alpha:3 of
+msgid "the value of alpha given"
+msgstr ""
+
+#: moildev.Moildev.Moildev.get_rho_from_alpha:5 of
+msgid "rho image"
+msgstr ""
+
+#: moildev.Moildev.Moildev.get_alpha_beta:1 of
+msgid "Get the alpha beta from specific coordinate image."
+msgstr ""
+
+#: moildev.Moildev.Moildev.get_alpha_beta:7 of
+msgid ""
+"alpha, beta (if you get none, the coordinate is out of range that can "
+"cover)"
+msgstr ""
+
+#: ../../api_reference.rst:15
+msgid "Testing code"
+msgstr ""
+
+#: ../../api_reference.rst:17
+msgid "You can open the testing code on `unittest` folder."
+msgstr ""
+

@@ -1,0 +1,41 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2023, Perseverance Technology
+# This file is distributed under the same license as the Moildev package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2023.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Moildev v1.x\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-07-14 10:54+0800\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: id\n"
+"Language-Team: id <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.12.1\n"
+
+#: ../../sample_application.rst:2
+msgid "Sample Application"
+msgstr ""
+
+#: ../../sample_application.rst:5
+msgid "1. Car Application"
+msgstr ""
+
+#: ../../sample_application.rst:9
+msgid "2. Internal Thread Inspection"
+msgstr ""
+
+#: ../../sample_application.rst:13
+msgid "3. 3D measurement"
+msgstr ""
+
+#: ../../sample_application.rst:17
+msgid "4. Visual odometry"
+msgstr ""
+
