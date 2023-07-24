@@ -27,6 +27,9 @@ extensions = [
     'sphinx.ext.viewcode',
     'sphinx.ext.githubpages',
     "sphinx.ext.napoleon",
+    "sphinx.ext.intersphinx",
+    'sphinx.ext.intersphinx',
+    'sphinxcontrib.youtube',
     "sphinx.ext.autosectionlabel"
 ]
 

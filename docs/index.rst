@@ -10,9 +10,10 @@ Welcome to moildev's documentation!
    :maxdepth: 2
    :caption: Contents:
 
-   release_note
-   getting_started
-   Architecture
-   sample_application
-   api_reference
+   1.Release_note
+   2.Getting_started
+   2.1.Tutorials
+   3.Architecture
+   4.Sample_application
+   5.Api_reference
 

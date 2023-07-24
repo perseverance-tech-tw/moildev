@@ -12,6 +12,8 @@ contact: perseverance@gmail.com
 import os
 import sys
 
+# modify the realpath in to the correct place in your working directory
+
 sys.path.append(os.path.dirname(__file__))
 sys.path.append(os.path.join(os.path.dirname(__file__), "../.."))
 

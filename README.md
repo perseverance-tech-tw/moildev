@@ -1,4 +1,4 @@
-# Moildev Release-4.0
+# Moildev V4.0
 Moildev Library is a collection of functions support python to developments fisheye image applications.
 
 ===
@@ -10,8 +10,12 @@ distribution. The second way is cloning from GitHub repository.
 ```commandline
 $ pip install Moildev
 ```
+
+Alternatively, you can choose the second option,
+which involves cloning the Moildev repository directly from [GitHub](https://github.com/perseverance-tech-tw/moildev).
+
 ```commandline
-$ git clone https://github.com/McutOIL/moildev.git
+$ git clone https://github.com/perseverance-tech-tw/moildev.git
 ```
 
 ## 2. Import Library
