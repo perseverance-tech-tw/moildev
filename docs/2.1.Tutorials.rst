@@ -46,7 +46,7 @@ and the second one is created based on the given parameter. Both images have a f
 .. |image_ori_2| image:: assets/image_virtual.png
    :width: 500pt
 
-.. list-table:: Original fisheye image with FOV 220 degree
+.. list-table::
    :widths: 75 75
    :align: center
    :class: borderless
@@ -54,8 +54,8 @@ and the second one is created based on the given parameter. Both images have a f
    * - |image_ori_1|
      - |image_ori_2|
 
-   * - **Fisheye image from experiment**
-     - **Phantom fisheye image**
+   * - Fisheye image from experiment
+     - Phantom fisheye image
 
 Create maps anypoint mode 1
 ===========================
@@ -115,8 +115,8 @@ This image showcases the outcome achieved through the use of the anypoint mode 1
 
    * - |image_any_exp|
      - |image_any_vir|
-   * - **Fisheye image from experiment**
-     - **Phantom fisheye image**
+   * - Fisheye image from experiment
+     - result from Phantom fisheye image
 
 
 Create maps anypoint mode 2
@@ -169,7 +169,7 @@ This image showcases the outcome achieved through the use of the anypoint mode 2
 .. |image_any_m2_vir| image:: assets/anypoint_m2_by_maps.png
    :width: 500pt
 
-.. list-table:: Anypoint mode 2 result image
+.. list-table::
    :widths: 75 75
    :align: center
    :class: borderless
@@ -206,7 +206,7 @@ This image showcases the outcome achieved through the use of the panorama tube a
 .. |image_pano_vir| image:: assets/panorama_tube.png
    :width: 500pt
 
-.. list-table:: Panorama tube result image
+.. list-table::
    :widths: 75 75
    :align: center
    :class: borderless
@@ -245,7 +245,7 @@ This image showcases the outcome achieved through the use of the panorama car al
 .. |image_pano_car_vir| image:: assets/panorama_car.png
    :width: 500pt
 
-.. list-table:: Panorama car result image
+.. list-table::
    :widths: 75 75
    :align: center
    :class: borderless
@@ -287,7 +287,7 @@ This image showcases the outcome achieved through the use of the recenter optica
 .. |image_recenter_vir| image:: assets/recenter.png
    :width: 500pt
 
-.. list-table:: Image result of recenter algorithm
+.. list-table::
    :widths: 75 75
    :align: center
    :class: borderless

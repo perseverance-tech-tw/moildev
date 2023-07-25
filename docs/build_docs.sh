@@ -4,6 +4,7 @@ set -x
 # *************************** Install dependencies *************************
 apt-get update
 apt-get -y install git rsync python3-sphinx python3-sphinx-rtd-theme python3-stemmer python3-git python3-pip python3-virtualenv python3-setuptools
+apt-get -y install fonts-freefont-otf latexmk python3-venv texlive-fonts-recommended texlive-latex-recommended texlive-latex-extra texlive-lang-greek tex-gyre texlive-xetex
 
 python3 -m pip install --upgrade rinohtype pygments sphinxcontrib-youtube
 
@@ -52,9 +53,9 @@ for current_version in ${versions}; do
       sphinx-build -b html . _build/html/${current_language}/${current_version} -D language="${current_language}"
 
       # PDF #
-      sphinx-build -b rinoh . _build/rinoh -D language="${current_language}"
+      make latexpdf
       mkdir -p "${docroot}/${current_language}/${current_version}"
-      cp "_build/rinoh/target.pdf" "${docroot}/${current_language}/${current_version}/Moildev-docs_${current_language}_${current_version}.pdf"
+      cp "_build/latex/Moildev.pdf" "${docroot}/${current_language}/${current_version}/Moildev-docs_${current_language}_${current_version}.pdf"
 
       # EPUB #
       sphinx-build -b epub . _build/epub -D language="${current_language}"

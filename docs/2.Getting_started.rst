@@ -42,9 +42,9 @@ Hence, the position of an imaged point referring to the principal point on the i
 directly reflects its corresponding zenithal distance (alpha). and azimuthal distance (beta) of
 the sight ray in space to normalize the imaged point onto a small sphere presented in the following figure:
 
-
 .. figure:: assets/hemisphare.jpg
     :alt: IMAGE
+    :width: 85%
     :align: center
 
     Moil dash camera

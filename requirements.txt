@@ -1,0 +1,4 @@
+GitPython
+Sphinx
+sphinx-rtd-theme
+sphinxcontrib-youtube

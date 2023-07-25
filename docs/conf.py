@@ -16,7 +16,7 @@ print(os.path.abspath("../../"))
 project = 'Moildev'
 copyright = '2023, Perseverance Technology'
 author = 'Perseverance Technology'
-release = '4.1.0'
+release = '4.0.0'
 
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
@@ -89,7 +89,7 @@ latex_logo = 'assets/logo.jpg'
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
     (master_doc, 'Moildev.tex', 'Moildev Documentation',
-     'Haryanto', 'manual'),
+     'Perseverance Technology', 'manual'),
 ]
 
 autodoc_default_flags = ['members', 'inherited-members']
