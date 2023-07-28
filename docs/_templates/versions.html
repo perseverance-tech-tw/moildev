@@ -1,3 +1,5 @@
+mkdir _templates
+cat > _templates/versions.html <<'EOF'
 {% if READTHEDOCS or display_lower_left %}
 {# Add rst-badge after rst-versions for small badge style. #}
   <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="versions">
@@ -47,7 +49,10 @@
       </dl>
       {% endif %}
       <hr/>
-      {% trans %} This pages modified by Haryanto and hosting provided by <a href="https://pages.github.com/">GitHub Pages</a>.{% endtrans %}
+      {% trans %}This pages modified by Haryanto and hosting provided by <a href="https://pages.github.com/">GitHub Pages</a>.{% endtrans %}
+
     </div>
   </div>
 {% endif %}
+
+EOF

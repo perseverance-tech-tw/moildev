@@ -23,7 +23,8 @@ export REPO_NAME="${GITHUB_REPOSITORY##*/}"
 
 # ***************************  Build Docs *************************
 # first, cleanup any old builds' static assets
-make clean
+# make clean
+make -C docs clean
 
 # get a list of branches, excluding 'HEAD' and 'gh-pages'
 versions="`git for-each-ref '--format=%(refname:lstrip=-1)' refs/remotes/origin/ | grep -viE '^(HEAD|gh-pages)$'`"
@@ -70,7 +71,7 @@ for current_version in ${versions}; do
 done
 
 # return to main branch
-git checkout main
+git checkout latest
 
 # ***************************  Update GitHub Pages *************************
 

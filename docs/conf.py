@@ -188,4 +188,4 @@ html_context['downloads'].append(('epub',
 html_context['display_github'] = True
 html_context['github_user'] = 'perseverance-tech-tw'
 html_context['github_repo'] = 'moildev'
-html_context['github_version'] = f'{current_version}/docs/'
+html_context['github_version'] = f'latest/docs/'
