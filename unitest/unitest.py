@@ -31,28 +31,48 @@ for name, _ in getmembers(Moildev, isfunction):
 class TestMoildev(unittest.TestCase):
     image = "image_virtual.png"
     camera_parameter = 'params_camera.json'
-    camera_type = "Raspi"
+    # camera_type = "Raspi"
+    # try:
+    #     with open(camera_parameter) as f:
+    #         data = json.load(f)
+    #         if camera_type in data.keys():
+    #             camera_name = data[camera_type]["cameraName"]
+    #             camera_fov = data[camera_type]["cameraFov"]
+    #             sensor_width = data[camera_type]['cameraSensorWidth']
+    #             sensor_height = data[camera_type]['cameraSensorHeight']
+    #             icx = data[camera_type]['iCx']
+    #             icy = data[camera_type]['iCy']
+    #             ratio = data[camera_type]['ratio']
+    #             image_width = data[camera_type]['imageWidth']
+    #             image_height = data[camera_type]['imageHeight']
+    #             calibrationRatio = data[camera_type]['calibrationRatio']
+    #             parameter0 = data[camera_type]['parameter0']
+    #             parameter1 = data[camera_type]['parameter1']
+    #             parameter2 = data[camera_type]['parameter2']
+    #             parameter3 = data[camera_type]['parameter3']
+    #             parameter4 = data[camera_type]['parameter4']
+    #             parameter5 = data[camera_type]['parameter5']
+    #             moildev = Moildev(camera_parameter, camera_type)
+    # except:
     with open(camera_parameter) as f:
         data = json.load(f)
-        if camera_type in data.keys():
-            camera_name = data[camera_type]["cameraName"]
-            camera_fov = data[camera_type]["cameraFov"]
-            sensor_width = data[camera_type]['cameraSensorWidth']
-            sensor_height = data[camera_type]['cameraSensorHeight']
-            icx = data[camera_type]['iCx']
-            icy = data[camera_type]['iCy']
-            ratio = data[camera_type]['ratio']
-            image_width = data[camera_type]['imageWidth']
-            image_height = data[camera_type]['imageHeight']
-            calibrationRatio = data[camera_type]['calibrationRatio']
-            parameter0 = data[camera_type]['parameter0']
-            parameter1 = data[camera_type]['parameter1']
-            parameter2 = data[camera_type]['parameter2']
-            parameter3 = data[camera_type]['parameter3']
-            parameter4 = data[camera_type]['parameter4']
-            parameter5 = data[camera_type]['parameter5']
-
-    moildev = Moildev(camera_parameter, camera_type)
+    camera_name = data["cameraName"]
+    camera_fov = data["cameraFov"]
+    sensor_width = data['cameraSensorWidth']
+    sensor_height = data['cameraSensorHeight']
+    icx = data['iCx']
+    icy = data['iCy']
+    ratio = data['ratio']
+    image_width = data['imageWidth']
+    image_height = data['imageHeight']
+    calibrationRatio = data['calibrationRatio']
+    parameter0 = data['parameter0']
+    parameter1 = data['parameter1']
+    parameter2 = data['parameter2']
+    parameter3 = data['parameter3']
+    parameter4 = data['parameter4']
+    parameter5 = data['parameter5']
+    moildev = Moildev(camera_parameter)
     maps = np.zeros((image_height, image_width), dtype=np.float32)
     image = cv2.imread(image)
 

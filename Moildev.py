@@ -449,7 +449,7 @@ class Moildev(object):
         self.__moildev.AnypointCar(self.__map_x, self.__map_y, pitch, yaw, roll, zoom)
         return self.__map_x, self.__map_y
 
-    def maps_panorama_tube(self, alpha_min, alpha_max):
+    def maps_panorama_tube(self, alpha_min, alpha_max, flip_h=False):
         """
         To generate a pair of X-Y Maps for alpha within 0 ... alpha_max degree, the result X-Y Maps can be used later
         to generate a panorama image from the original fisheye image.
@@ -458,6 +458,7 @@ class Moildev(object):
             alpha_min: the minimum alpha degree given
             alpha_max: the maximum alpha degree given. The recommended value is half of camera FOV. For example, use
                         90 for a 180 degree fisheye images and use 110 for a 220 degree fisheye images.
+            flip_h: Flip horizontal axis (boolean True or False)
 
         Returns:
             mapX: the mapping matrices X
@@ -469,10 +470,10 @@ class Moildev(object):
         """
         if alpha_min < 5:
             alpha_min = 5
-        self.__moildev.PanoramaTube(self.__map_x, self.__map_y, alpha_min, alpha_max)
+        self.__moildev.PanoramaTube(self.__map_x, self.__map_y, alpha_min, alpha_max, flip_h)
         return self.__map_x, self.__map_y
 
-    def maps_panorama_car(self, alpha_max, iC_alpha_degree, iC_beta_degree, p_alpha_from, p_alpha_end):
+    def maps_panorama_car(self, alpha_max, iC_alpha_degree, iC_beta_degree, flip_h=False):
         """
         To generate a pair of X-Y Maps for alpha within 0 alpha_max degree, the result X-Y Maps can be used later
         to generate a panorama image from the original fisheye image. The panorama image centered at the 3D
@@ -483,9 +484,7 @@ class Moildev(object):
                         90 for a 180 degree fisheye images and use 110 for a 220 degree fisheye images.
             iC_alpha_degree : alpha angle of panorama center.
             iC_beta_degree : beta angle of panorama center.
-            p_alpha_from:
-            p_alpha_end:
-
+            flip_h: Flip horizontal axis (boolean True or False)
 
         Returns:
             mapX
@@ -494,10 +493,9 @@ class Moildev(object):
         .. code-block :: markdown
 
             please reference: `https://github.com/perseverance-tech-tw/moildev`
-
         """
         self.__moildev.PanoramaCar(self.__map_x, self.__map_y, alpha_max, iC_alpha_degree,
-                                   iC_beta_degree, p_alpha_from, p_alpha_end)
+                                   iC_beta_degree, flip_h)
         return self.__map_x, self.__map_y
 
     def maps_panorama_rt(self, alpha_max, iC_alpha_degree, iC_beta_degree):
@@ -589,7 +587,7 @@ class Moildev(object):
         image = cv2.remap(image, map_x, map_y, cv2.INTER_CUBIC)
         return image
 
-    def panorama_tube(self, image, alpha_min, alpha_max):
+    def panorama_tube(self, image, alpha_min, alpha_max, flip_h=False):
         """
         The panorama image
 
@@ -606,11 +604,11 @@ class Moildev(object):
 
             please reference: `https://github.com/perseverance-tech-tw/moildev`
         """
-        map_x, map_y = self.maps_panorama_tube(alpha_min, alpha_max)
+        map_x, map_y = self.maps_panorama_tube(alpha_min, alpha_max, flip_h)
         image = cv2.remap(image, map_x, map_y, cv2.INTER_CUBIC)
         return image
 
-    def panorama_car(self, image, alpha_max, alpha, beta, left, right, top, bottom):
+    def panorama_car(self, image, alpha_max, alpha, beta, left, right, top, bottom, flip_h=False):
         """
         The function that generate a moil dash panorama image from fisheye camera.
         the image can control by alpha to change the pitch direction and beta for yaw direction.
@@ -634,7 +632,7 @@ class Moildev(object):
 
             please reference: `https://github.com/perseverance-tech-tw/moildev`
         """
-        map_x, map_y = self.maps_panorama_car(alpha_max, alpha, beta, 0, 1)
+        map_x, map_y = self.maps_panorama_car(alpha_max, alpha, beta, flip_h)
         image = cv2.resize(cv2.remap(image, map_x, map_y, cv2.INTER_CUBIC),
                            (image.shape[1] * 2, image.shape[0]))
         image = image[round(image.shape[0] * top):

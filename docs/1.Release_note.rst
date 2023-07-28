@@ -1,9 +1,9 @@
 Release Note
 ############
 
-Moildev 4.0
+Moildev 4.x
 ============
-Moildev is an advanced software development kit (SDK) designed specifically for processing fisheye images.
+Moildev version 4 is an advanced software development kit (SDK) designed specifically for processing fisheye images.
 It stands out from its competitors thanks to a groundbreaking and unique invention that completely transforms
 the way fisheye images are handled, setting new standards for quality and performance.
 With Moildev, you can expect an exceptional level of precision and accuracy in processing fisheye distortions,
@@ -14,10 +14,21 @@ fisheye processing capabilities. Embrace Moildev to elevate your projects with o
 
 Release Highlight
 =================
+
+Moildev 4.0
+************
+    - Release date: *12 December 2022*
     - Introducing the parameter camera, now become a property of the class Moildev, enhancing flexibility and control.
     - Refactored function names in adherence to the PEP8 rule, ensuring improved code readability. For example, **getAnypointMaps** (V3.0) has been renamed to **maps_anypoint_mode1**. For detailed information, refer to the script help.
     - Renamed the function reverseImage to recenter, making its purpose clearer and more intuitive.
     - The current version of Moildev now specifies the panorama type by the application, with options for **panorama_car** and **panorama_tube**. This allows for a more tailored and efficient panorama creation process.
+
+Moildev 4.1
+************
+    - Release date: *12 June 2023*
+    - Improve the panorama car function with adding feature flip horizontal and remove the cropping ROI
+    - Improve the panorama tube function with adding feature flip horizontal
+    - More stable
 
 
 Copyright

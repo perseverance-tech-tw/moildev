@@ -50,6 +50,14 @@ Leveraging fisheye images in internal thread inspection allows for a more compre
 
 |
 
+**live demo our moildev for thread inspection**
+
+..  youtube:: o0Zj67bcqE4
+    :width: 100%
+    :align: center
+
+|
+
 3. 3D measurement
 =================
 
@@ -59,15 +67,10 @@ This versatility allows for precise and comprehensive 3D measurements, making Mo
 applications that require accurate spatial analysis. Whether it's for industrial metrology, robotics, or other fields,
 Moildev's capabilities in 3D measurement add a new dimension of accuracy and efficiency to the process, ensuring reliable and valuable data insights.
 
-.. figure:: assets/three_d_1.png
+..  youtube:: cDuTrog51xY
+    :width: 100%
     :align: center
-
-    Example 3D measurement in vertical direction
-
-.. figure:: assets/three_d_2.png
-    :align: center
-
-    Example 3D measurement in horizontal direction
+|
 
 4. Visual odometry
 ==================

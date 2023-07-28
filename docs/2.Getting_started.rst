@@ -42,12 +42,10 @@ Hence, the position of an imaged point referring to the principal point on the i
 directly reflects its corresponding zenithal distance (alpha). and azimuthal distance (beta) of
 the sight ray in space to normalize the imaged point onto a small sphere presented in the following figure:
 
-.. figure:: assets/hemisphare.jpg
+.. figure:: assets/nppm.png
     :alt: IMAGE
     :width: 85%
     :align: center
-
-    Moil dash camera
 
 Based on the coordinate system, the angles respectively defined by incident rays and the optical axis are the zenithal angle (alpha)
 and the azimuthal angle (beta), which are the angles surrounding the optical axis.
@@ -71,3 +69,55 @@ the Y axis, starting from the positive direction and clockwise around the X axis
            :align: center
 
            B.Azimuthal Angle
+
+
+1. Anypoint
+-----------
+When dealing with fisheye images, you may want to turn them back into regular, undistorted images at a particular angle.
+To achieve this, there are two straightforward ways you can choose to indicate the angle you desire for the restoration process (Usually we call anypoint).:
+
+.. figure:: assets/any_basic.png
+   :align: center
+
+|
+
+**Mode 1 : ( Pitch, Roll )**
+
+.. figure:: assets/mode_1_any.jpg
+   :align: center
+
+|
+
+**Mode 2 : ( Pitch, Yaw)**
+
+.. figure:: assets/mode_2_any.jpg
+   :align: center
+
+|
+
+2. Panorama
+------------
+
+The process involves the expansion of a hemispherical image onto a two-dimensional plane resembling a world map.
+This expansion allows for a comprehensive representation of the entire hemispherical view in a format suitable for analysis and visualization.
+Additionally, the resulting processed image enables further examination and detection of tubular objects,
+providing valuable insights and information for subsequent stages of the data processing pipeline.
+
+.. figure:: assets/panorama_basic.jpg
+   :align: center
+
+|
+
+By utilizing spherical coordinate rotation, which refers to Rodrigues' rotation formula, the fisheye image can be
+transformed to face a different angle, providing a fresh perspective on the scene. This technique finds practical
+application in handling tubular images, where objects appear at various positions in relation to the vanishing point of the tube.
+Through a process known as normalization, these objects can be made to conform to a standardized scale,
+facilitating a better understanding of their sizes and proportions.
+
+.. figure:: assets/recenter_basic.jpg
+   :align: center
+
+|
+
+
+

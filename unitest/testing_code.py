@@ -12,13 +12,14 @@ contact: perseverance@gmail.com
 import os
 import sys
 
-# modify the realpath in to the correct place in your working directory
-
 sys.path.append(os.path.dirname(__file__))
 sys.path.append(os.path.join(os.path.dirname(__file__), "../.."))
 
 from moildev import Moildev
 import cv2
+import platform
+
+print(platform.python_version())
 
 #  Specify the size of window show image
 w, h = 400, 300
@@ -28,6 +29,8 @@ image = cv2.imread("image_virtual.png")
 image = cv2.circle(image, (1295, 1844), 25, (0, 255, 0), 25)
 image_experiment = cv2.imread("image_experiment.png")
 image_experiment = cv2.circle(image_experiment, (1295, 1844), 25, (0, 255, 0), 25)
+
+Moildev.version()
 
 original_colon = cv2.resize(image_experiment, (w, h))
 cv2.imshow("original experiment", original_colon)
