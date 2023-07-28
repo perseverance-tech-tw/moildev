@@ -1,0 +1,370 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="ch" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="ch" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Architecture &mdash; Moildev 4.0.0 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/sphinx_highlight.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Sample Application" href="4.Sample_application.html" />
+    <link rel="prev" title="Quick Tutorials" href="2.1.Tutorials.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> Moildev
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                latest
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption" role="heading"><span class="caption-text">篇目:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="1.Release_note.html">Release Note</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="1.Release_note.html#moildev-4-x">Moildev 4.x</a></li>
+<li class="toctree-l2"><a class="reference internal" href="1.Release_note.html#release-highlight">Release Highlight</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="1.Release_note.html#moildev-4-0">Moildev 4.0</a></li>
+<li class="toctree-l3"><a class="reference internal" href="1.Release_note.html#moildev-4-1">Moildev 4.1</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="1.Release_note.html#copyright">Copyright</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="2.Getting_started.html">Getting Started</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="2.Getting_started.html#installation">Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="2.Getting_started.html#basic-concept">Basic Concept</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="2.Getting_started.html#anypoint">1. Anypoint</a></li>
+<li class="toctree-l3"><a class="reference internal" href="2.Getting_started.html#panorama">2. Panorama</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="2.1.Tutorials.html">Quick Tutorials</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="2.1.Tutorials.html#import-moildev-library">Import moildev library</a></li>
+<li class="toctree-l2"><a class="reference internal" href="2.1.Tutorials.html#create-moildev-object">Create moildev object</a></li>
+<li class="toctree-l2"><a class="reference internal" href="2.1.Tutorials.html#load-image">Load Image</a></li>
+<li class="toctree-l2"><a class="reference internal" href="2.1.Tutorials.html#create-maps-anypoint-mode-1">Create maps anypoint mode 1</a></li>
+<li class="toctree-l2"><a class="reference internal" href="2.1.Tutorials.html#create-anypoint-mode-1">Create anypoint mode 1</a></li>
+<li class="toctree-l2"><a class="reference internal" href="2.1.Tutorials.html#create-maps-anypoint-mode-2">Create maps anypoint mode 2</a></li>
+<li class="toctree-l2"><a class="reference internal" href="2.1.Tutorials.html#create-anypoint-mode-2">Create anypoint mode 2</a></li>
+<li class="toctree-l2"><a class="reference internal" href="2.1.Tutorials.html#create-panorama-tube">Create panorama tube</a></li>
+<li class="toctree-l2"><a class="reference internal" href="2.1.Tutorials.html#create-panorama-car">Create panorama car</a></li>
+<li class="toctree-l2"><a class="reference internal" href="2.1.Tutorials.html#create-recenter-image">Create recenter image</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Architecture</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#overview">Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#supported-platform">Supported Platform</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="4.Sample_application.html">Sample Application</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="4.Sample_application.html#car-application">1. Car Application</a></li>
+<li class="toctree-l2"><a class="reference internal" href="4.Sample_application.html#internal-thread-inspection">2. Internal Thread Inspection</a></li>
+<li class="toctree-l2"><a class="reference internal" href="4.Sample_application.html#d-measurement">3. 3D measurement</a></li>
+<li class="toctree-l2"><a class="reference internal" href="4.Sample_application.html#visual-odometry">4. Visual odometry</a></li>
+<li class="toctree-l2"><a class="reference internal" href="4.Sample_application.html#colonoscopy">5. Colonoscopy</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="5.Api_reference.html">API Documentation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="5.Api_reference.html#module-moildev.Moildev">Moildev Module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="5.Api_reference.html#moildev.Moildev.Moildev"><code class="docutils literal notranslate"><span class="pre">Moildev</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="5.Api_reference.html#moildev.Moildev.Moildev.version"><code class="docutils literal notranslate"><span class="pre">Moildev.version()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="5.Api_reference.html#moildev.Moildev.Moildev.camera_name"><code class="docutils literal notranslate"><span class="pre">Moildev.camera_name</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="5.Api_reference.html#moildev.Moildev.Moildev.camera_fov"><code class="docutils literal notranslate"><span class="pre">Moildev.camera_fov</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="5.Api_reference.html#moildev.Moildev.Moildev.icx"><code class="docutils literal notranslate"><span class="pre">Moildev.icx</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="5.Api_reference.html#moildev.Moildev.Moildev.icy"><code class="docutils literal notranslate"><span class="pre">Moildev.icy</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="5.Api_reference.html#moildev.Moildev.Moildev.image_width"><code class="docutils literal notranslate"><span class="pre">Moildev.image_width</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="5.Api_reference.html#moildev.Moildev.Moildev.image_height"><code class="docutils literal notranslate"><span class="pre">Moildev.image_height</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="5.Api_reference.html#moildev.Moildev.Moildev.param_0"><code class="docutils literal notranslate"><span class="pre">Moildev.param_0</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="5.Api_reference.html#moildev.Moildev.Moildev.param_1"><code class="docutils literal notranslate"><span class="pre">Moildev.param_1</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="5.Api_reference.html#moildev.Moildev.Moildev.param_2"><code class="docutils literal notranslate"><span class="pre">Moildev.param_2</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="5.Api_reference.html#moildev.Moildev.Moildev.param_3"><code class="docutils literal notranslate"><span class="pre">Moildev.param_3</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="5.Api_reference.html#moildev.Moildev.Moildev.param_4"><code class="docutils literal notranslate"><span class="pre">Moildev.param_4</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="5.Api_reference.html#moildev.Moildev.Moildev.param_5"><code class="docutils literal notranslate"><span class="pre">Moildev.param_5</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="5.Api_reference.html#moildev.Moildev.Moildev.maps_anypoint_mode1"><code class="docutils literal notranslate"><span class="pre">Moildev.maps_anypoint_mode1()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="5.Api_reference.html#moildev.Moildev.Moildev.maps_anypoint_mode2"><code class="docutils literal notranslate"><span class="pre">Moildev.maps_anypoint_mode2()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="5.Api_reference.html#moildev.Moildev.Moildev.maps_panorama_tube"><code class="docutils literal notranslate"><span class="pre">Moildev.maps_panorama_tube()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="5.Api_reference.html#moildev.Moildev.Moildev.maps_panorama_car"><code class="docutils literal notranslate"><span class="pre">Moildev.maps_panorama_car()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="5.Api_reference.html#moildev.Moildev.Moildev.maps_panorama_rt"><code class="docutils literal notranslate"><span class="pre">Moildev.maps_panorama_rt()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="5.Api_reference.html#moildev.Moildev.Moildev.maps_recenter"><code class="docutils literal notranslate"><span class="pre">Moildev.maps_recenter()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="5.Api_reference.html#moildev.Moildev.Moildev.anypoint_mode1"><code class="docutils literal notranslate"><span class="pre">Moildev.anypoint_mode1()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="5.Api_reference.html#moildev.Moildev.Moildev.anypoint_mode2"><code class="docutils literal notranslate"><span class="pre">Moildev.anypoint_mode2()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="5.Api_reference.html#moildev.Moildev.Moildev.panorama_tube"><code class="docutils literal notranslate"><span class="pre">Moildev.panorama_tube()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="5.Api_reference.html#moildev.Moildev.Moildev.panorama_car"><code class="docutils literal notranslate"><span class="pre">Moildev.panorama_car()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="5.Api_reference.html#moildev.Moildev.Moildev.recenter"><code class="docutils literal notranslate"><span class="pre">Moildev.recenter()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="5.Api_reference.html#moildev.Moildev.Moildev.get_alpha_from_rho"><code class="docutils literal notranslate"><span class="pre">Moildev.get_alpha_from_rho()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="5.Api_reference.html#moildev.Moildev.Moildev.get_rho_from_alpha"><code class="docutils literal notranslate"><span class="pre">Moildev.get_rho_from_alpha()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="5.Api_reference.html#moildev.Moildev.Moildev.get_alpha_beta"><code class="docutils literal notranslate"><span class="pre">Moildev.get_alpha_beta()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="5.Api_reference.html#testing-code">Testing code</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Moildev</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>Architecture</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            
+              <a href="https://github.com/perseverance-tech-tw/moildev/blob/latest/docs/3.Architecture.rst" class="fa fa-github"> Edit on GitHub</a>
+            
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <section id="architecture">
+<h1>Architecture<a class="headerlink" href="#architecture" title="Permalink to this heading">¶</a></h1>
+<section id="overview">
+<h2>Overview<a class="headerlink" href="#overview" title="Permalink to this heading">¶</a></h2>
+<p>The Moildev Library is a comprehensive set of functions designed to facilitate the development of fisheye image applications.
+Originally created for the C++ programming language, the library has evolved to adapt to the changing preferences of developers over the past decade.
+Given Python's immense popularity among developers in recent years, we recognized the need to expand the Moildev library's capabilities and make it accessible to Python users as well.
+As a result, we are now actively developing and enhancing the Moildev Library for Python,
+ensuring that Python developers can harness its power and versatility for their fisheye image projects with ease and efficiency.</p>
+<figure class="align-center">
+<img alt="alternate text" src="_images/moildev.png" />
+</figure>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</section>
+<section id="supported-platform">
+<h2>Supported Platform<a class="headerlink" href="#supported-platform" title="Permalink to this heading">¶</a></h2>
+<p>This library is specifically designed to provide support for Python programming language, catering to both Windows x64 and Ubuntu systems with AMD architecture.
+By offering compatibility with these platforms, developers using Python can seamlessly leverage the capabilities of
+this library for their projects on Windows and Ubuntu operating systems running on 64-bit architectures and AMD processors.
+This ensures that a broader community of Python developers can take advantage of the library's functionalities and optimize
+their coding experience for enhanced performance and efficiency. Whether you're working on a Windows x64 or Ubuntu with AMD setup,
+this versatile library empowers you with a wealth of tools and features to create robust and cutting-edge applications.</p>
+</section>
+</section>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="4.Sample_application.html" class="btn btn-neutral float-right" title="Sample Application" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="2.1.Tutorials.html" class="btn btn-neutral float-left" title="Quick Tutorials" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2023, Perseverance Technology
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      <span class="fa fa-book"> Read the Docs</span>
+      v: latest
+      <span class="fa fa-caret-down"></span>
+    </span>
+    <div class="rst-other-versions">
+      
+      <dl>
+        <dt>Languages</dt>
+        
+          
+          <dd><a href="/moildev/en/latest/">en</a></dd>
+          
+        
+           <strong> 
+          <dd><a href="/moildev/ch/latest/">ch</a></dd>
+           </strong> 
+        
+          
+          <dd><a href="/moildev/id/latest/">id</a></dd>
+          
+        
+      </dl>
+      
+      
+      <dl>
+        <dt>Versions</dt>
+        
+           <strong> 
+          <dd><a href="/moildev/ch/latest/">latest</a></dd>
+           </strong> 
+        
+      </dl>
+      
+      
+      <dl>
+        <dt>Downloads</dt>
+        
+          <dd><a href="/moildev/ch/latest/Moildev-docs_ch_latest.pdf">pdf</a></dd>
+        
+          <dd><a href="/moildev/ch/latest/Moildev-docs_ch_latest.epub">epub</a></dd>
+        
+      </dl>
+      
+      
+      <hr/>
+      This pages modified by Haryanto and hosting provided by <a href="https://pages.github.com/">GitHub Pages</a>.
+
+    </div>
+  </div>
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

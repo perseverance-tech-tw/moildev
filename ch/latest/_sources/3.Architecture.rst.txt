@@ -1,0 +1,29 @@
+Architecture
+#############
+
+Overview
+=========
+
+
+The Moildev Library is a comprehensive set of functions designed to facilitate the development of fisheye image applications.
+Originally created for the C++ programming language, the library has evolved to adapt to the changing preferences of developers over the past decade.
+Given Python's immense popularity among developers in recent years, we recognized the need to expand the Moildev library's capabilities and make it accessible to Python users as well.
+As a result, we are now actively developing and enhancing the Moildev Library for Python,
+ensuring that Python developers can harness its power and versatility for their fisheye image projects with ease and efficiency.
+
+.. figure:: assets/moildev.png
+   :alt: alternate text
+   :align: center
+
+|
+
+Supported Platform
+===================
+
+This library is specifically designed to provide support for Python programming language, catering to both Windows x64 and Ubuntu systems with AMD architecture.
+By offering compatibility with these platforms, developers using Python can seamlessly leverage the capabilities of
+this library for their projects on Windows and Ubuntu operating systems running on 64-bit architectures and AMD processors.
+This ensures that a broader community of Python developers can take advantage of the library's functionalities and optimize
+their coding experience for enhanced performance and efficiency. Whether you're working on a Windows x64 or Ubuntu with AMD setup,
+this versatile library empowers you with a wealth of tools and features to create robust and cutting-edge applications.
+

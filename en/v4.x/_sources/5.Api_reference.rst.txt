@@ -1,0 +1,20 @@
+..  _link-target:
+
+API Documentation
+#################
+
+
+Moildev Module
+==============
+
+.. automodule:: moildev.Moildev
+   :members:
+
+
+Testing code
+=============
+
+To gain a comprehensive understanding of the moildev capabilities,
+you have the option to explore the entire testing code,
+accessible within the **unittest** folder.
+

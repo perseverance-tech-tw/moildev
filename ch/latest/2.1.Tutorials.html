@@ -1,0 +1,585 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="ch" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="ch" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Quick Tutorials &mdash; Moildev 4.0.0 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/sphinx_highlight.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Architecture" href="3.Architecture.html" />
+    <link rel="prev" title="Getting Started" href="2.Getting_started.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> Moildev
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                latest
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption" role="heading"><span class="caption-text">篇目:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="1.Release_note.html">Release Note</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="1.Release_note.html#moildev-4-x">Moildev 4.x</a></li>
+<li class="toctree-l2"><a class="reference internal" href="1.Release_note.html#release-highlight">Release Highlight</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="1.Release_note.html#moildev-4-0">Moildev 4.0</a></li>
+<li class="toctree-l3"><a class="reference internal" href="1.Release_note.html#moildev-4-1">Moildev 4.1</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="1.Release_note.html#copyright">Copyright</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="2.Getting_started.html">Getting Started</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="2.Getting_started.html#installation">Installation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="2.Getting_started.html#basic-concept">Basic Concept</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="2.Getting_started.html#anypoint">1. Anypoint</a></li>
+<li class="toctree-l3"><a class="reference internal" href="2.Getting_started.html#panorama">2. Panorama</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Quick Tutorials</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#import-moildev-library">Import moildev library</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#create-moildev-object">Create moildev object</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#load-image">Load Image</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#create-maps-anypoint-mode-1">Create maps anypoint mode 1</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#create-anypoint-mode-1">Create anypoint mode 1</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#create-maps-anypoint-mode-2">Create maps anypoint mode 2</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#create-anypoint-mode-2">Create anypoint mode 2</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#create-panorama-tube">Create panorama tube</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#create-panorama-car">Create panorama car</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#create-recenter-image">Create recenter image</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="3.Architecture.html">Architecture</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="3.Architecture.html#overview">Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="3.Architecture.html#supported-platform">Supported Platform</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="4.Sample_application.html">Sample Application</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="4.Sample_application.html#car-application">1. Car Application</a></li>
+<li class="toctree-l2"><a class="reference internal" href="4.Sample_application.html#internal-thread-inspection">2. Internal Thread Inspection</a></li>
+<li class="toctree-l2"><a class="reference internal" href="4.Sample_application.html#d-measurement">3. 3D measurement</a></li>
+<li class="toctree-l2"><a class="reference internal" href="4.Sample_application.html#visual-odometry">4. Visual odometry</a></li>
+<li class="toctree-l2"><a class="reference internal" href="4.Sample_application.html#colonoscopy">5. Colonoscopy</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="5.Api_reference.html">API Documentation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="5.Api_reference.html#module-moildev.Moildev">Moildev Module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="5.Api_reference.html#moildev.Moildev.Moildev"><code class="docutils literal notranslate"><span class="pre">Moildev</span></code></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="5.Api_reference.html#moildev.Moildev.Moildev.version"><code class="docutils literal notranslate"><span class="pre">Moildev.version()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="5.Api_reference.html#moildev.Moildev.Moildev.camera_name"><code class="docutils literal notranslate"><span class="pre">Moildev.camera_name</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="5.Api_reference.html#moildev.Moildev.Moildev.camera_fov"><code class="docutils literal notranslate"><span class="pre">Moildev.camera_fov</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="5.Api_reference.html#moildev.Moildev.Moildev.icx"><code class="docutils literal notranslate"><span class="pre">Moildev.icx</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="5.Api_reference.html#moildev.Moildev.Moildev.icy"><code class="docutils literal notranslate"><span class="pre">Moildev.icy</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="5.Api_reference.html#moildev.Moildev.Moildev.image_width"><code class="docutils literal notranslate"><span class="pre">Moildev.image_width</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="5.Api_reference.html#moildev.Moildev.Moildev.image_height"><code class="docutils literal notranslate"><span class="pre">Moildev.image_height</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="5.Api_reference.html#moildev.Moildev.Moildev.param_0"><code class="docutils literal notranslate"><span class="pre">Moildev.param_0</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="5.Api_reference.html#moildev.Moildev.Moildev.param_1"><code class="docutils literal notranslate"><span class="pre">Moildev.param_1</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="5.Api_reference.html#moildev.Moildev.Moildev.param_2"><code class="docutils literal notranslate"><span class="pre">Moildev.param_2</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="5.Api_reference.html#moildev.Moildev.Moildev.param_3"><code class="docutils literal notranslate"><span class="pre">Moildev.param_3</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="5.Api_reference.html#moildev.Moildev.Moildev.param_4"><code class="docutils literal notranslate"><span class="pre">Moildev.param_4</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="5.Api_reference.html#moildev.Moildev.Moildev.param_5"><code class="docutils literal notranslate"><span class="pre">Moildev.param_5</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="5.Api_reference.html#moildev.Moildev.Moildev.maps_anypoint_mode1"><code class="docutils literal notranslate"><span class="pre">Moildev.maps_anypoint_mode1()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="5.Api_reference.html#moildev.Moildev.Moildev.maps_anypoint_mode2"><code class="docutils literal notranslate"><span class="pre">Moildev.maps_anypoint_mode2()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="5.Api_reference.html#moildev.Moildev.Moildev.maps_panorama_tube"><code class="docutils literal notranslate"><span class="pre">Moildev.maps_panorama_tube()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="5.Api_reference.html#moildev.Moildev.Moildev.maps_panorama_car"><code class="docutils literal notranslate"><span class="pre">Moildev.maps_panorama_car()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="5.Api_reference.html#moildev.Moildev.Moildev.maps_panorama_rt"><code class="docutils literal notranslate"><span class="pre">Moildev.maps_panorama_rt()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="5.Api_reference.html#moildev.Moildev.Moildev.maps_recenter"><code class="docutils literal notranslate"><span class="pre">Moildev.maps_recenter()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="5.Api_reference.html#moildev.Moildev.Moildev.anypoint_mode1"><code class="docutils literal notranslate"><span class="pre">Moildev.anypoint_mode1()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="5.Api_reference.html#moildev.Moildev.Moildev.anypoint_mode2"><code class="docutils literal notranslate"><span class="pre">Moildev.anypoint_mode2()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="5.Api_reference.html#moildev.Moildev.Moildev.panorama_tube"><code class="docutils literal notranslate"><span class="pre">Moildev.panorama_tube()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="5.Api_reference.html#moildev.Moildev.Moildev.panorama_car"><code class="docutils literal notranslate"><span class="pre">Moildev.panorama_car()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="5.Api_reference.html#moildev.Moildev.Moildev.recenter"><code class="docutils literal notranslate"><span class="pre">Moildev.recenter()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="5.Api_reference.html#moildev.Moildev.Moildev.get_alpha_from_rho"><code class="docutils literal notranslate"><span class="pre">Moildev.get_alpha_from_rho()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="5.Api_reference.html#moildev.Moildev.Moildev.get_rho_from_alpha"><code class="docutils literal notranslate"><span class="pre">Moildev.get_rho_from_alpha()</span></code></a></li>
+<li class="toctree-l4"><a class="reference internal" href="5.Api_reference.html#moildev.Moildev.Moildev.get_alpha_beta"><code class="docutils literal notranslate"><span class="pre">Moildev.get_alpha_beta()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="5.Api_reference.html#testing-code">Testing code</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Moildev</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>Quick Tutorials</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            
+              <a href="https://github.com/perseverance-tech-tw/moildev/blob/latest/docs/2.1.Tutorials.rst" class="fa fa-github"> Edit on GitHub</a>
+            
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <section id="quick-tutorials">
+<h1>Quick Tutorials<a class="headerlink" href="#quick-tutorials" title="Permalink to this heading">¶</a></h1>
+<p>If you're working on fisheye image processing applications, especially using the Python programming language,
+look no further than the Moildev Library. This tutorial is designed to give you a straightforward and
+comprehensive understanding of the incredible capabilities that Moildev brings to the table.
+So, let's dive in and discover the exciting possibilities that await you with Moildev!</p>
+<p>For complete reference, see the <a class="reference internal" href="5.Api_reference.html#link-target"><span class="std std-ref">API documentation</span></a>.</p>
+<section id="import-moildev-library">
+<h2>Import moildev library<a class="headerlink" href="#import-moildev-library" title="Permalink to this heading">¶</a></h2>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">moildev</span> <span class="kn">import</span> <span class="n">Moildev</span>
+</pre></div>
+</div>
+</section>
+<section id="create-moildev-object">
+<h2>Create moildev object<a class="headerlink" href="#create-moildev-object" title="Permalink to this heading">¶</a></h2>
+<p>To create the object from Moildev, you have to provide the parameter. The camera parameter is the result from
+calibration camera by MOIL laboratory that will store on <strong>.json</strong> file. Bellow this is the example:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">moildev</span> <span class="o">=</span> <span class="n">Moildev</span><span class="p">(</span><span class="s2">&quot;camera_parameter_path.json&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+<section id="load-image">
+<h2>Load Image<a class="headerlink" href="#load-image" title="Permalink to this heading">¶</a></h2>
+<p>We start by loading an image from a specified file using the OpenCV Library.
+Next, we process this image using Moildev to achieve our desired results.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">image</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">imread</span><span class="p">(</span><span class="s2">&quot;Image_Path in your computer&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Below is an example of a fisheye image. We are providing two images: the first one is from an experiment,
+and the second one is created based on the given parameter. Both images have a field of view of 220 degrees.</p>
+<table class="borderless docutils align-center">
+<colgroup>
+<col style="width: 50.0%" />
+<col style="width: 50.0%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="_images/image_experiment.png"><img alt="image_ori_1" src="_images/image_experiment.png" style="width: 500pt;" /></a></p></td>
+<td><p><a class="reference internal" href="_images/image_virtual.png"><img alt="image_ori_2" src="_images/image_virtual.png" style="width: 500pt;" /></a></p></td>
+</tr>
+<tr class="row-even"><td><p>Fisheye image from experiment</p></td>
+<td><p>Phantom fisheye image</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="create-maps-anypoint-mode-1">
+<h2>Create maps anypoint mode 1<a class="headerlink" href="#create-maps-anypoint-mode-1" title="Permalink to this heading">¶</a></h2>
+<p>This function serves to generate a set of X-Y Maps based on the provided alpha, beta, and zoom parameters.
+These maps are then used to remap the original fisheye image to the desired angle image.
+The function specifically creates maps for the &quot;anypoint mode 1&quot; which is ideal for tube applications.
+Below are some examples showcasing how this function can be used.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">map_X</span><span class="p">,</span> <span class="n">map_Y</span> <span class="o">=</span> <span class="n">moildev</span><span class="o">.</span><span class="n">maps_anypoint_mode1</span><span class="p">(</span><span class="n">alpha</span><span class="p">,</span> <span class="n">beta</span><span class="p">,</span> <span class="n">zoom</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Example:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">map_X</span><span class="p">,</span> <span class="n">map_Y</span> <span class="o">=</span> <span class="n">moildev</span><span class="o">.</span><span class="n">maps_anypoint_mode1</span><span class="p">(</span><span class="mi">90</span><span class="p">,</span> <span class="mi">180</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+<span class="n">anypoint_maps_m1</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">remap</span><span class="p">(</span><span class="n">image</span><span class="p">,</span> <span class="n">map_X</span><span class="p">,</span> <span class="n">map_Y</span><span class="p">,</span> <span class="n">cv2</span><span class="o">.</span><span class="n">INTER_CUBIC</span><span class="p">)</span>
+<span class="n">anypoint_maps_m1</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">resize</span><span class="p">(</span><span class="n">anypoint_maps_m1</span><span class="p">,</span> <span class="p">(</span><span class="mi">400</span><span class="p">,</span> <span class="mi">300</span><span class="p">))</span>
+<span class="n">cv2</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="s2">&quot;anypoint using maps mode 1&quot;</span><span class="p">,</span> <span class="n">anypoint_maps_m1</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+<section id="create-anypoint-mode-1">
+<h2>Create anypoint mode 1<a class="headerlink" href="#create-anypoint-mode-1" title="Permalink to this heading">¶</a></h2>
+<p>This function generates an anypoint view mode 1 image.
+The resulting image is rotated by beta degrees around the Z-axis (roll) after an alpha degree rotation around the X-axis (pitch).
+To use this function, you'll need to provide an image as a parameter, and it will return the remapped image as the result.
+Below, you'll find an example implementation to help you understand how to use it.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">anypoint_m1</span> <span class="o">=</span> <span class="n">moildev</span><span class="o">.</span><span class="n">anypoint_mode1</span><span class="p">(</span><span class="n">image</span><span class="p">,</span> <span class="n">alpha</span><span class="p">,</span> <span class="n">beta</span><span class="p">,</span> <span class="n">zoom</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Example:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">anypoint_m1</span> <span class="o">=</span> <span class="n">moildev</span><span class="o">.</span><span class="n">anypoint_mode1</span><span class="p">(</span><span class="n">image</span><span class="p">,</span> <span class="mi">90</span><span class="p">,</span> <span class="mi">180</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+<span class="n">anypoint_m1</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">resize</span><span class="p">(</span><span class="n">anypoint_m1</span><span class="p">,</span> <span class="p">(</span><span class="mi">400</span><span class="p">,</span> <span class="mi">300</span><span class="p">))</span>
+<span class="n">cv2</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="s2">&quot;anypoint mode 1&quot;</span><span class="p">,</span> <span class="n">anypoint_m1</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Here is the resulting image obtained after applying the anypoint mode 1 processing.
+This image showcases the outcome achieved through the use of the anypoint mode 1 algorithm.</p>
+<table class="borderless docutils align-center" id="id1">
+<caption><span class="caption-text">Image result from anypoint mode 1 processing</span><a class="headerlink" href="#id1" title="Permalink to this table">¶</a></caption>
+<colgroup>
+<col style="width: 50.0%" />
+<col style="width: 50.0%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="_images/anypoint_m1.png"><img alt="image_any_exp" src="_images/anypoint_m1.png" style="width: 500pt;" /></a></p></td>
+<td><p><a class="reference internal" href="_images/anypoint_m1_by_maps_virtual.png"><img alt="image_any_vir" src="_images/anypoint_m1_by_maps_virtual.png" style="width: 500pt;" /></a></p></td>
+</tr>
+<tr class="row-even"><td><p>Fisheye image from experiment</p></td>
+<td><p>result from Phantom fisheye image</p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="create-maps-anypoint-mode-2">
+<h2>Create maps anypoint mode 2<a class="headerlink" href="#create-maps-anypoint-mode-2" title="Permalink to this heading">¶</a></h2>
+<p>This function is designed to generate a set of X-Y Maps based on the provided pitch, yaw, roll, and zoom parameters.
+These maps are then used to remap the original fisheye image to the desired target image.
+By utilizing these X-Y Maps, the function allows for precise and accurate adjustments to the perspective of the fisheye image,
+ensuring that the final result aligns with the intended visual specifications.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">map_X</span><span class="p">,</span> <span class="n">map_Y</span> <span class="o">=</span> <span class="n">moildev</span><span class="o">.</span><span class="n">maps_anypoint_mode2</span><span class="p">(</span><span class="n">pitch</span><span class="p">,</span> <span class="n">yaw</span><span class="p">,</span> <span class="n">roll</span><span class="p">,</span> <span class="n">zoom</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Example:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">map_X</span><span class="p">,</span> <span class="n">map_Y</span> <span class="o">=</span> <span class="n">moildev</span><span class="o">.</span><span class="n">maps_anypoint_mode2</span><span class="p">(</span><span class="o">-</span><span class="mi">90</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+<span class="n">anypoint_maps_m2</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">remap</span><span class="p">(</span><span class="n">image</span><span class="p">,</span> <span class="n">map_X</span><span class="p">,</span> <span class="n">map_Y</span><span class="p">,</span> <span class="n">cv2</span><span class="o">.</span><span class="n">INTER_CUBIC</span><span class="p">)</span>
+<span class="n">anypoint_maps_m2</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">resize</span><span class="p">(</span><span class="n">anypoint</span><span class="p">,</span> <span class="p">(</span><span class="mi">400</span><span class="p">,</span> <span class="mi">300</span><span class="p">))</span>
+<span class="n">cv2</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="s2">&quot;anypoint maps mode 2&quot;</span> <span class="n">anypoint_maps_m2</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+<section id="create-anypoint-mode-2">
+<h2>Create anypoint mode 2<a class="headerlink" href="#create-anypoint-mode-2" title="Permalink to this heading">¶</a></h2>
+<p>This function generates an anypoint view mode 2 image.
+To use this function, you'll need to provide an image as a parameter, and it will return the remapped image as the result.
+Below, you'll find an example implementation to help you understand how to use it.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">anypoint_m2</span> <span class="o">=</span> <span class="n">moildev</span><span class="o">.</span><span class="n">anypoint_mode2</span><span class="p">(</span><span class="n">image</span><span class="p">,</span> <span class="n">pitch</span><span class="p">,</span> <span class="n">yaw</span><span class="p">,</span> <span class="n">roll</span><span class="p">,</span> <span class="n">zoom</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Example:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">anypoint_m2</span> <span class="o">=</span> <span class="n">moildev</span><span class="o">.</span><span class="n">anypoint_mode2</span><span class="p">(</span><span class="n">image</span><span class="p">,</span> <span class="o">-</span><span class="mi">90</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+<span class="n">anypoint_m2</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">resize</span><span class="p">(</span><span class="n">anypoint_m2</span><span class="p">,</span> <span class="p">(</span><span class="mi">400</span><span class="p">,</span> <span class="mi">300</span><span class="p">))</span>
+<span class="n">cv2</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="s2">&quot;anypoint mode 2&quot;</span><span class="p">,</span> <span class="n">anypoint_m2</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Here is the resulting image obtained after applying the anypoint mode 2 processing.
+This image showcases the outcome achieved through the use of the anypoint mode 2 algorithm.</p>
+<table class="borderless docutils align-center">
+<colgroup>
+<col style="width: 50.0%" />
+<col style="width: 50.0%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="_images/anypoint_m2_exp.png"><img alt="image_any_m2_exp" src="_images/anypoint_m2_exp.png" style="width: 500pt;" /></a></p></td>
+<td><p><a class="reference internal" href="_images/anypoint_m2_by_maps.png"><img alt="image_any_m2_vir" src="_images/anypoint_m2_by_maps.png" style="width: 500pt;" /></a></p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Fisheye image from experiment</strong></p></td>
+<td><p><strong>Phantom fisheye image</strong></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="create-panorama-tube">
+<h2>Create panorama tube<a class="headerlink" href="#create-panorama-tube" title="Permalink to this heading">¶</a></h2>
+<p>This function enables the creation of an image with a panoramic view.
+It allows you to capture a wide-angle perspective, providing a seamless and immersive visual experience.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">panorama_tube</span> <span class="o">=</span> <span class="n">moildev</span><span class="o">.</span><span class="n">panorama_tube</span><span class="p">(</span><span class="n">image</span><span class="p">,</span> <span class="n">alpha_min</span><span class="p">,</span> <span class="n">alpha_max</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Example:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">panorama_tube</span> <span class="o">=</span> <span class="n">moildev</span><span class="o">.</span><span class="n">panorama_tube</span><span class="p">(</span><span class="n">image</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">110</span><span class="p">)</span>
+<span class="n">panorama_tube</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">resize</span><span class="p">(</span><span class="n">panorama_tube</span><span class="p">,</span> <span class="p">(</span><span class="mi">400</span><span class="p">,</span> <span class="mi">300</span><span class="p">))</span>
+<span class="n">cv2</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="s2">&quot;panorama tube&quot;</span><span class="p">,</span> <span class="n">panorama_tube</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Here is the resulting image obtained after applying the panorama tube processing.
+This image showcases the outcome achieved through the use of the panorama tube algorithm.</p>
+<table class="borderless docutils align-center">
+<colgroup>
+<col style="width: 50.0%" />
+<col style="width: 50.0%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="_images/panorama_tube_exper.png"><img alt="image_pano_exp" src="_images/panorama_tube_exper.png" style="width: 500pt;" /></a></p></td>
+<td><p><a class="reference internal" href="_images/panorama_tube.png"><img alt="image_pano_vir" src="_images/panorama_tube.png" style="width: 500pt;" /></a></p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Fisheye image from experiment</strong></p></td>
+<td><p><strong>Phantom fisheye image</strong></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="create-panorama-car">
+<h2>Create panorama car<a class="headerlink" href="#create-panorama-car" title="Permalink to this heading">¶</a></h2>
+<p>This function is designed to generate a panorama image from a fisheye camera.
+You can control the image's pitch direction by adjusting the alpha parameter and the yaw direction by modifying the beta parameter.
+Additionally, to select a specific region of interest (ROI), you have the flexibility to adjust the left, right, top, and bottom parameters.
+This enables you to precisely customize and tailor the resulting panorama image to suit your specific requirements and preferences.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">panorama_car</span> <span class="o">=</span> <span class="n">moildev</span><span class="o">.</span><span class="n">panorama_car</span><span class="p">(</span><span class="n">image</span><span class="p">,</span> <span class="n">alpha_max</span><span class="p">,</span> <span class="n">alpha</span><span class="p">,</span> <span class="n">beta</span><span class="p">,</span> <span class="n">left</span><span class="p">,</span> <span class="n">right</span><span class="p">,</span> <span class="n">top</span><span class="p">,</span> <span class="n">bottom</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Example:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">panorama_car</span> <span class="o">=</span> <span class="n">moildev</span><span class="o">.</span><span class="n">panorama_car</span><span class="p">(</span><span class="n">image</span><span class="p">,</span> <span class="mi">180</span><span class="p">,</span> <span class="mi">80</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mf">0.25</span><span class="p">,</span> <span class="mf">0.75</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+<span class="n">panorama_car</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">resize</span><span class="p">(</span><span class="n">panorama_car</span><span class="p">,</span> <span class="p">(</span><span class="mi">400</span><span class="p">,</span> <span class="mi">300</span><span class="p">))</span>
+<span class="n">cv2</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="s2">&quot;panorama car&quot;</span><span class="p">,</span> <span class="n">panorama_car</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Here is the resulting image obtained after applying the panorama car processing.
+This image showcases the outcome achieved through the use of the panorama car algorithm.</p>
+<table class="borderless docutils align-center">
+<colgroup>
+<col style="width: 50.0%" />
+<col style="width: 50.0%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="_images/panorama_car_exp.png"><img alt="image_pano_car_exp" src="_images/panorama_car_exp.png" style="width: 500pt;" /></a></p></td>
+<td><p><a class="reference internal" href="_images/panorama_car.png"><img alt="image_pano_car_vir" src="_images/panorama_car.png" style="width: 500pt;" /></a></p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Fisheye image from experiment</strong></p></td>
+<td><p><strong>Phantom fisheye image</strong></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="create-recenter-image">
+<h2>Create recenter image<a class="headerlink" href="#create-recenter-image" title="Permalink to this heading">¶</a></h2>
+<p>This function serves a crucial purpose in the realm of fisheye image processing by facilitating the alteration of the optical point.
+It allows users to redefine the center of view, offering the ability to shift the focal point or pivot of the fisheye image.
+This feature proves invaluable for various applications, as it empowers developers and creatives to fine-tune the perspective
+and focus of their fisheye images according to their specific needs and artistic vision.
+Whether it involves adjusting the field of view or repositioning the optical center, this function unlocks
+a world of possibilities and unleashes the full potential of fisheye image processing.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">recenter</span> <span class="o">=</span> <span class="n">moildev</span><span class="p">(</span><span class="n">image</span><span class="p">,</span> <span class="n">alpha_max</span><span class="p">,</span> <span class="n">IC_alpha_degree</span><span class="p">,</span> <span class="n">IC_beta_degree</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Example:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">recenter</span> <span class="o">=</span> <span class="n">moildev</span><span class="o">.</span><span class="n">recenter</span><span class="p">(</span><span class="n">image</span><span class="p">,</span> <span class="mi">110</span><span class="p">,</span> <span class="mi">25</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span>
+<span class="n">recenter</span> <span class="o">=</span> <span class="n">cv2</span><span class="o">.</span><span class="n">resize</span><span class="p">(</span><span class="n">recenter</span><span class="p">,</span> <span class="p">(</span><span class="mi">400</span><span class="p">,</span> <span class="mi">300</span><span class="p">))</span>
+<span class="n">cv2</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="s2">&quot;show recenter&quot;</span><span class="p">,</span> <span class="n">recenter</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Here is the resulting image obtained after applying the recenter optical point processing.
+This image showcases the outcome achieved through the use of the recenter optical point algorithm.</p>
+<table class="borderless docutils align-center">
+<colgroup>
+<col style="width: 50.0%" />
+<col style="width: 50.0%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="_images/recenter_vir.png"><img alt="image_recenter_exp" src="_images/recenter_vir.png" style="width: 500pt;" /></a></p></td>
+<td><p><a class="reference internal" href="_images/recenter.png"><img alt="image_recenter_vir" src="_images/recenter.png" style="width: 500pt;" /></a></p></td>
+</tr>
+<tr class="row-even"><td><p><strong>Fisheye image from experiment</strong></p></td>
+<td><p><strong>Phantom fisheye image</strong></p></td>
+</tr>
+</tbody>
+</table>
+<p>~Perseverance Technology~</p>
+</section>
+</section>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="3.Architecture.html" class="btn btn-neutral float-right" title="Architecture" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="2.Getting_started.html" class="btn btn-neutral float-left" title="Getting Started" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2023, Perseverance Technology
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+  <div class="rst-versions" data-toggle="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      <span class="fa fa-book"> Read the Docs</span>
+      v: latest
+      <span class="fa fa-caret-down"></span>
+    </span>
+    <div class="rst-other-versions">
+      
+      <dl>
+        <dt>Languages</dt>
+        
+          
+          <dd><a href="/moildev/en/latest/">en</a></dd>
+          
+        
+           <strong> 
+          <dd><a href="/moildev/ch/latest/">ch</a></dd>
+           </strong> 
+        
+          
+          <dd><a href="/moildev/id/latest/">id</a></dd>
+          
+        
+      </dl>
+      
+      
+      <dl>
+        <dt>Versions</dt>
+        
+           <strong> 
+          <dd><a href="/moildev/ch/latest/">latest</a></dd>
+           </strong> 
+        
+      </dl>
+      
+      
+      <dl>
+        <dt>Downloads</dt>
+        
+          <dd><a href="/moildev/ch/latest/Moildev-docs_ch_latest.pdf">pdf</a></dd>
+        
+          <dd><a href="/moildev/ch/latest/Moildev-docs_ch_latest.epub">epub</a></dd>
+        
+      </dl>
+      
+      
+      <hr/>
+      This pages modified by Haryanto and hosting provided by <a href="https://pages.github.com/">GitHub Pages</a>.
+
+    </div>
+  </div>
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
